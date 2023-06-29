@@ -6,7 +6,7 @@ Para facilitar la lectura y leer rápido.
 
 ## Uso
 
-``python speedRead <textfile> <wpm>``
+``python lecturaVeloz <textfile> <wpm>``
 
 ### ToDo
 
