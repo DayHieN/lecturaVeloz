@@ -3,7 +3,7 @@
 from time import sleep
 from termcolor import colored
 import sys
-
+import os
 
 
 def openTxt(txt):
@@ -18,10 +18,12 @@ def displayWords(txt, wpm):
     delay = round((60 / wpm), 2)
 
     for word in txt:
-        print(f'{space*20}{colored(word, "green")}', end='\r')
-        print(end='\x1b[2K')
+
+        print(f'\n{space*20}{colored(word, "green")}', end='\r')
+        # print(end='\x1b[2K')
 
         sleep(delay)
+        os.system('cls' if os.name == 'nt' else 'clear')
 
 
 txt = openTxt(sys.argv[1])
