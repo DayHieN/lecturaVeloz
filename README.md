@@ -6,9 +6,10 @@ Para facilitar la lectura y leer rápido.
 
 ## Uso
 
-``python lecturaVeloz <textfile> <wpm>``
+``lecturaVeloz.py <textfile> <wpm>``
 
 ### ToDo
 
 - [X] Funcionalidad básica
 - [ ] Optical Recognition Point (Punto de reconocimiento Óptico)
+- [ ] Poder poner argumentos como se debe (-t -w)
