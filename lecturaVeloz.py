@@ -15,11 +15,12 @@ def openTxt(txt):
 def displayWords(txt, wpm):
 
     space = ' '
+    newLine = '\n'
     delay = round((60 / wpm), 2)
 
     for word in txt:
 
-        print(f'\n{space*20}{colored(word, "green")}', end='\r')
+        print(f'{newLine*10}{space*40}{colored(word, "green")}', end='\r')
         # print(end='\x1b[2K')
 
         sleep(delay)
